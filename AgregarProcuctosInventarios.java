@@ -23,6 +23,7 @@ public class AgregarProcuctosInventarios {
                     productos[i].getNombre(),
                     productos[i].getPrecioxKilo(),
                     productos[i].isDisponiblesExportacion() ? "Sí" : "No");
+            
         }
 
     }
