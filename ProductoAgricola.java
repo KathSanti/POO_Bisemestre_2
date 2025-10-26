@@ -56,12 +56,11 @@ public class ProductoAgricola {
 
     @Override
     public String toString() {
-        return "ProductoAgricola{" +
-                "nombre='" + nombre + '\'' +
-                ", id=" + id +
-                ", precioxKilo=" + precioxKilo +
-                ", disponiblesExportacion=" + disponiblesExportacion +
-                '}';
+        //  Explicación string format:   nro entero | 12 caracteres texto| 10 caracteres para double simbolo dolar| 23 carateres string| salto de lienea| todos alineados a la izquierda conn "-"
+        return String.format("║ %-2d │ %-12s │ $%-10.2f │ %-23s ║",
+                id,
+                nombre,
+                precioxKilo,
+                disponiblesExportacion ? "Sí" : "No");
     }
-    //
 }
