@@ -3,9 +3,9 @@ public class AgregarProcuctosInventarios {
     public static void main(String[] args) {
 
         //Crear objetos en mi clase main
-        ProductoAgricola producto1 = new ProductoAgricola("Aceitunas",101,0.5, false);
-        ProductoAgricola producto2 = new ProductoAgricola("Zanahoria",102,50,true);
-        ProductoAgricola producto3 = new ProductoAgricola("Lechuga",103,100,true);
+        ProductoAgricola producto1 = new ProductoAgricola("Aceitunas",101,500, false);
+        ProductoAgricola producto2 = new ProductoAgricola("Zanahoria",102,700,true);
+        ProductoAgricola producto3 = new ProductoAgricola("Lechuga",103,1000,true);
 
 
         System.out.println("╔════════════════════════════════════════════════════════════╗");
@@ -17,12 +17,8 @@ public class AgregarProcuctosInventarios {
 
         ProductoAgricola[] productos = {producto1,producto2,producto3};
         for (int i = 0; i < productos.length; i++) {
-            System.out.printf("║ %-2d │ %-12s │ $%-10.2f │ %-23s ║%n",
-
-                    productos[i].getId(),
-                    productos[i].getNombre(),
-                    productos[i].getPrecioxKilo(),
-                    productos[i].isDisponiblesExportacion() ? "Sí" : "No");
+            //por cada posición en mi arreglo llamo al metodo to String para que me devuelva los datos ordenados y listos para mostrar
+            System.out.println(productos[i].toString());
 
         }
 
