@@ -2,10 +2,24 @@ package FormativaSemana2.Model;
 
 public class Direccion {
 
+    /**
+     * Representa la información de la dirección fisica de un cliente
+     *
+     */
+
     private String calle;
     private String numero;
     private String ciudad;
     private String pais;
+
+    /**
+     * Constructor para crear instancia de la dirección de un cliente
+     *
+     * @param calle   Nombre de la calle dirección
+     * @param ciudad  Nombre de la ciudad dirección
+     * @param numero  Número de la dirección
+     * @param pais    Nombre del país dirección
+     */
 
     public Direccion(String calle, String ciudad, String numero, String pais) {
         this.calle = calle;
